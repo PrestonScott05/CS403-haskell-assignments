@@ -17,7 +17,13 @@
     wrap "hello"  --expect=> "<<hello>>"
     wrap ""       --expect=> "<<>>"
 
---processNumbers
-    --processNumbers :: [Int] -> [Int]
+--quadruple / octuple=====>
+    quadruple 5   --expect=> 20
+    octuple 5     --expect=> 40
+    quadruple 2.5 --expect=> 10.0
+
+--processNumbers=====>
+    processNumbers [1,2,3,4]  --expect=> [-4,2,12,26]
+    processNumbers []         --expect=> []
 
     
